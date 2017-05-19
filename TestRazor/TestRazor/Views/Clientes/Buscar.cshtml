@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Buscar";
+}
+
+<h2>Buscar</h2>
+
+
+@using (Html.BeginForm("Busqueda", "Clientes"))
+{
+    @Html.TextBox("cliente");
+    <input type="submit" value="Buscar"/>
+}
+

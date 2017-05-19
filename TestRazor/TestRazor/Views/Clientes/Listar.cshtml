@@ -1,0 +1,20 @@
+﻿@model List<TestRazor.ViewModel.Cliente>
+
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+
+@foreach (var cliente in Model)
+{
+    <label>@cliente.Apellido</label>
+    <label>@cliente.Nombre</label>
+    <br />
+}
+
+
+
+

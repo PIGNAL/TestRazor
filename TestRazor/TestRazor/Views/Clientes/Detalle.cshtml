@@ -1,0 +1,19 @@
+﻿@model TestRazor.ViewModel.Cliente
+
+@{
+    ViewBag.Title = "Detalle";
+}
+
+<h2>Detalle</h2>
+
+
+@using (Html.BeginForm("Modificar","Clientes"))
+{
+    @Html.EditorFor(x => x.Apellido)
+    @Html.EditorFor(x => x.Nombre)
+    @Html.EditorFor(x => x.Edad)
+    @Html.Hidden("Id", Model.ClienteId)
+    <input type="submit" value="Modificar" />
+}
+
+

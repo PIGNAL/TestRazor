@@ -1,0 +1,15 @@
+﻿@model List<TestRazor.ViewModel.ProveedorViewModel>
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+@foreach (var proveedor in Model)
+{
+    <label>@proveedor.Nombre</label>
+    <label>@proveedor.Direccion</label>
+    <label>@proveedor.Telefono</label>
+    <br />
+}
+

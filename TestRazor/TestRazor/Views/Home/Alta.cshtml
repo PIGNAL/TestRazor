@@ -1,0 +1,27 @@
+﻿@model TestRazor.ViewModel.Persona
+@using TestRazor.Helpers
+
+@{
+    ViewBag.Title = "Alta";
+}
+
+<h2>Alta</h2>
+
+@Html.LabelTest()
+
+@using (Html.BeginForm("Guardar", "Home"))
+{
+    @Html.ValidationSummary()
+    @Html.EditorForModel()
+    <input type="submit" value="Crear"/>   
+}
+
+
+
+
+
+
+
+
+
+

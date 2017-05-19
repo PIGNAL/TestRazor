@@ -1,0 +1,18 @@
+﻿@model List<TestRazor.ViewModel.ProductoViewModel>
+
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+
+@foreach (var producto in Model)
+{
+    <label>@producto.Nombre</label>
+    <label>@producto.Precio</label>
+    <label>@producto.Codigo</label>
+    <label>@producto.Stock</label>
+    <br />
+}

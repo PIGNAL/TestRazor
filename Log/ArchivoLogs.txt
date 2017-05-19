@@ -1,0 +1,660 @@
+18/5/2017 16:04:41 - INFO: Opened connection at 18/5/2017 16:04:41 -03:00
+
+18/5/2017 16:04:41 - INFO: Started transaction at 18/5/2017 16:04:41 -03:00
+
+18/5/2017 16:04:41 - INFO: INSERT [dbo].[Producto]([Nombre], [Precio], [Codigo], [Stock])
+VALUES (@0, @1, @2, @3)
+SELECT [ProductoId]
+FROM [dbo].[Producto]
+WHERE @@ROWCOUNT > 0 AND [ProductoId] = scope_identity()
+18/5/2017 16:04:41 - INFO: 
+
+18/5/2017 16:04:41 - INFO: -- @0: 'Golosinas' (Type = String, Size = 50)
+
+18/5/2017 16:04:41 - INFO: -- @1: '22' (Type = Decimal, Precision = 18)
+
+18/5/2017 16:04:41 - INFO: -- @2: '1234' (Type = String, Size = 50)
+
+18/5/2017 16:04:41 - INFO: -- @3: '200' (Type = Int32)
+
+18/5/2017 16:04:41 - INFO: -- Executing at 18/5/2017 16:04:41 -03:00
+
+18/5/2017 16:04:42 - INFO: -- Completed in 357 ms with result: SqlDataReader
+
+18/5/2017 16:04:42 - INFO: 
+
+18/5/2017 16:04:42 - INFO: Committed transaction at 18/5/2017 16:04:42 -03:00
+
+18/5/2017 16:04:42 - INFO: Closed connection at 18/5/2017 16:04:42 -03:00
+
+18/5/2017 16:04:42 - INFO: Opened connection at 18/5/2017 16:04:42 -03:00
+
+18/5/2017 16:04:42 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+18/5/2017 16:04:42 - INFO: 
+
+18/5/2017 16:04:42 - INFO: -- Executing at 18/5/2017 16:04:42 -03:00
+
+18/5/2017 16:04:42 - INFO: -- Completed in 6 ms with result: SqlDataReader
+
+18/5/2017 16:04:42 - INFO: 
+
+18/5/2017 16:04:42 - INFO: Closed connection at 18/5/2017 16:04:42 -03:00
+
+18/5/2017 16:05:23 - INFO: Pasó por el action Busqueda
+18/5/2017 16:05:23 - INFO: Opened connection at 18/5/2017 16:05:23 -03:00
+
+18/5/2017 16:05:23 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE ([Extent1].[Nombre] LIKE @p__linq__0 ESCAPE N'~') OR ( CAST( [Extent1].[Precio] AS nvarchar(max)) LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:05:23 - INFO: 
+
+18/5/2017 16:05:23 - INFO: -- p__linq__0: '%1234%' (Type = String, Size = 4000)
+
+18/5/2017 16:05:23 - INFO: -- p__linq__1: '%1234%' (Type = String, Size = 4000)
+
+18/5/2017 16:05:23 - INFO: -- Executing at 18/5/2017 16:05:23 -03:00
+
+18/5/2017 16:05:23 - INFO: -- Completed in 3 ms with result: SqlDataReader
+
+18/5/2017 16:05:23 - INFO: 
+
+18/5/2017 16:05:23 - INFO: Closed connection at 18/5/2017 16:05:23 -03:00
+
+18/5/2017 16:05:46 - INFO: Pasó por el action Busqueda
+18/5/2017 16:05:46 - INFO: Opened connection at 18/5/2017 16:05:46 -03:00
+
+18/5/2017 16:05:46 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE ([Extent1].[Nombre] LIKE @p__linq__0 ESCAPE N'~') OR ( CAST( [Extent1].[Precio] AS nvarchar(max)) LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:05:46 - INFO: 
+
+18/5/2017 16:05:46 - INFO: -- p__linq__0: '%1%' (Type = String, Size = 4000)
+
+18/5/2017 16:05:46 - INFO: -- p__linq__1: '%1%' (Type = String, Size = 4000)
+
+18/5/2017 16:05:46 - INFO: -- Executing at 18/5/2017 16:05:46 -03:00
+
+18/5/2017 16:05:46 - INFO: -- Completed in 1 ms with result: SqlDataReader
+
+18/5/2017 16:05:46 - INFO: 
+
+18/5/2017 16:05:46 - INFO: Closed connection at 18/5/2017 16:05:46 -03:00
+
+18/5/2017 16:07:09 - INFO: Pasó por el action Busqueda
+18/5/2017 16:07:30 - INFO: Opened connection at 18/5/2017 16:07:30 -03:00
+
+18/5/2017 16:07:30 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE ([Extent1].[Nombre] LIKE @p__linq__0 ESCAPE N'~') OR ( CAST( [Extent1].[Precio] AS nvarchar(max)) LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:07:30 - INFO: 
+
+18/5/2017 16:07:30 - INFO: -- p__linq__0: '%1%' (Type = String, Size = 4000)
+
+18/5/2017 16:07:30 - INFO: -- p__linq__1: '%1%' (Type = String, Size = 4000)
+
+18/5/2017 16:07:30 - INFO: -- Executing at 18/5/2017 16:07:30 -03:00
+
+18/5/2017 16:07:30 - INFO: -- Completed in 4 ms with result: SqlDataReader
+
+18/5/2017 16:07:30 - INFO: 
+
+18/5/2017 16:07:30 - INFO: Closed connection at 18/5/2017 16:07:30 -03:00
+
+18/5/2017 16:07:45 - INFO: Pasó por el action Busqueda
+18/5/2017 16:07:45 - INFO: Opened connection at 18/5/2017 16:07:45 -03:00
+
+18/5/2017 16:07:45 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE ([Extent1].[Nombre] LIKE @p__linq__0 ESCAPE N'~') OR ( CAST( [Extent1].[Precio] AS nvarchar(max)) LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:07:45 - INFO: 
+
+18/5/2017 16:07:45 - INFO: -- p__linq__0: '%golo%' (Type = String, Size = 4000)
+
+18/5/2017 16:07:45 - INFO: -- p__linq__1: '%golo%' (Type = String, Size = 4000)
+
+18/5/2017 16:07:45 - INFO: -- Executing at 18/5/2017 16:07:45 -03:00
+
+18/5/2017 16:07:45 - INFO: -- Completed in 1 ms with result: SqlDataReader
+
+18/5/2017 16:07:45 - INFO: 
+
+18/5/2017 16:07:45 - INFO: Closed connection at 18/5/2017 16:07:45 -03:00
+
+18/5/2017 16:08:06 - INFO: Opened connection at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[ProductoId] = @p__linq__0
+18/5/2017 16:08:06 - INFO: 
+
+18/5/2017 16:08:06 - INFO: -- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+18/5/2017 16:08:06 - INFO: -- Executing at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: -- Completed in 5 ms with result: SqlDataReader
+
+18/5/2017 16:08:06 - INFO: 
+
+18/5/2017 16:08:06 - INFO: Closed connection at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: Opened connection at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: Started transaction at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: DELETE [dbo].[Producto]
+WHERE ([ProductoId] = @0)
+18/5/2017 16:08:06 - INFO: 
+
+18/5/2017 16:08:06 - INFO: -- @0: '1' (Type = Int32)
+
+18/5/2017 16:08:06 - INFO: -- Executing at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: -- Completed in 13 ms with result: 1
+
+18/5/2017 16:08:06 - INFO: 
+
+18/5/2017 16:08:06 - INFO: Committed transaction at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: Closed connection at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: Opened connection at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+18/5/2017 16:08:06 - INFO: 
+
+18/5/2017 16:08:06 - INFO: -- Executing at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:08:06 - INFO: -- Completed in 1 ms with result: SqlDataReader
+
+18/5/2017 16:08:06 - INFO: 
+
+18/5/2017 16:08:06 - INFO: Closed connection at 18/5/2017 16:08:06 -03:00
+
+18/5/2017 16:11:52 - INFO: Opened connection at 18/5/2017 16:11:52 -03:00
+
+18/5/2017 16:11:52 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+18/5/2017 16:11:52 - INFO: 
+
+18/5/2017 16:11:52 - INFO: -- Executing at 18/5/2017 16:11:52 -03:00
+
+18/5/2017 16:11:52 - INFO: -- Completed in 12 ms with result: SqlDataReader
+
+18/5/2017 16:11:52 - INFO: 
+
+18/5/2017 16:11:52 - INFO: Closed connection at 18/5/2017 16:11:52 -03:00
+
+18/5/2017 16:13:08 - INFO: Pasó por el action Busqueda
+18/5/2017 16:13:08 - INFO: Opened connection at 18/5/2017 16:13:08 -03:00
+
+18/5/2017 16:13:08 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE ([Extent1].[Nombre] LIKE @p__linq__0 ESCAPE N'~') OR ( CAST( [Extent1].[Precio] AS nvarchar(max)) LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:13:08 - INFO: 
+
+18/5/2017 16:13:08 - INFO: -- p__linq__0: '%22%' (Type = String, Size = 4000)
+
+18/5/2017 16:13:08 - INFO: -- p__linq__1: '%22%' (Type = String, Size = 4000)
+
+18/5/2017 16:13:08 - INFO: -- Executing at 18/5/2017 16:13:08 -03:00
+
+18/5/2017 16:13:08 - INFO: -- Completed in 1 ms with result: SqlDataReader
+
+18/5/2017 16:13:08 - INFO: 
+
+18/5/2017 16:13:08 - INFO: Closed connection at 18/5/2017 16:13:08 -03:00
+
+18/5/2017 16:13:13 - INFO: Opened connection at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[Codigo] = @p__linq__0
+18/5/2017 16:13:13 - INFO: 
+
+18/5/2017 16:13:13 - INFO: -- p__linq__0: '1234' (Type = String, Size = 4000)
+
+18/5/2017 16:13:13 - INFO: -- Executing at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: -- Completed in 3 ms with result: SqlDataReader
+
+18/5/2017 16:13:13 - INFO: 
+
+18/5/2017 16:13:13 - INFO: Closed connection at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: Opened connection at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: Started transaction at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: DELETE [dbo].[Producto]
+WHERE ([ProductoId] = @0)
+18/5/2017 16:13:13 - INFO: 
+
+18/5/2017 16:13:13 - INFO: -- @0: '2' (Type = Int32)
+
+18/5/2017 16:13:13 - INFO: -- Executing at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: -- Completed in 4 ms with result: 1
+
+18/5/2017 16:13:13 - INFO: 
+
+18/5/2017 16:13:13 - INFO: Committed transaction at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: Closed connection at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: Opened connection at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+18/5/2017 16:13:13 - INFO: 
+
+18/5/2017 16:13:13 - INFO: -- Executing at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:13 - INFO: -- Completed in 1 ms with result: SqlDataReader
+
+18/5/2017 16:13:13 - INFO: 
+
+18/5/2017 16:13:13 - INFO: Closed connection at 18/5/2017 16:13:13 -03:00
+
+18/5/2017 16:13:30 - INFO: Pasó por el action Busqueda
+18/5/2017 16:13:30 - INFO: Opened connection at 18/5/2017 16:13:30 -03:00
+
+18/5/2017 16:13:30 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE ([Extent1].[Nombre] LIKE @p__linq__0 ESCAPE N'~') OR ( CAST( [Extent1].[Precio] AS nvarchar(max)) LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:13:30 - INFO: 
+
+18/5/2017 16:13:30 - INFO: -- p__linq__0: '%40%' (Type = String, Size = 4000)
+
+18/5/2017 16:13:30 - INFO: -- p__linq__1: '%40%' (Type = String, Size = 4000)
+
+18/5/2017 16:13:30 - INFO: -- Executing at 18/5/2017 16:13:30 -03:00
+
+18/5/2017 16:13:30 - INFO: -- Completed in 2 ms with result: SqlDataReader
+
+18/5/2017 16:13:30 - INFO: 
+
+18/5/2017 16:13:30 - INFO: Closed connection at 18/5/2017 16:13:30 -03:00
+
+18/5/2017 16:13:34 - INFO: Opened connection at 18/5/2017 16:13:34 -03:00
+
+18/5/2017 16:13:34 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[Codigo] = @p__linq__0
+18/5/2017 16:13:34 - INFO: 
+
+18/5/2017 16:13:34 - INFO: -- p__linq__0: '3' (Type = String, Size = 4000)
+
+18/5/2017 16:13:34 - INFO: -- Executing at 18/5/2017 16:13:34 -03:00
+
+18/5/2017 16:13:34 - INFO: -- Completed in 1 ms with result: SqlDataReader
+
+18/5/2017 16:13:34 - INFO: 
+
+18/5/2017 16:13:34 - INFO: Closed connection at 18/5/2017 16:13:34 -03:00
+
+18/5/2017 16:18:30 - INFO: Pasó por el action Busqueda
+18/5/2017 16:18:30 - INFO: Opened connection at 18/5/2017 16:18:30 -03:00
+
+18/5/2017 16:18:30 - INFO: SELECT 
+    [Extent1].[ClienteId] AS [ClienteId], 
+    [Extent1].[Apellido] AS [Apellido], 
+    [Extent1].[ApellidoDeSoltera] AS [ApellidoDeSoltera], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Edad] AS [Edad], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[Test] AS [Test]
+    FROM [dbo].[Cliente] AS [Extent1]
+    WHERE ([Extent1].[Apellido] LIKE @p__linq__0 ESCAPE N'~') OR ([Extent1].[Nombre] LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:18:30 - INFO: 
+
+18/5/2017 16:18:30 - INFO: -- p__linq__0: '%jona%' (Type = String, Size = 4000)
+
+18/5/2017 16:18:30 - INFO: -- p__linq__1: '%jona%' (Type = String, Size = 4000)
+
+18/5/2017 16:18:30 - INFO: -- Executing at 18/5/2017 16:18:30 -03:00
+
+18/5/2017 16:18:30 - INFO: -- Completed in 11 ms with result: SqlDataReader
+
+18/5/2017 16:18:30 - INFO: 
+
+18/5/2017 16:18:30 - INFO: Closed connection at 18/5/2017 16:18:30 -03:00
+
+18/5/2017 16:18:32 - INFO: Opened connection at 18/5/2017 16:18:32 -03:00
+
+18/5/2017 16:18:32 - INFO: SELECT TOP (1) 
+    [Extent1].[ClienteId] AS [ClienteId], 
+    [Extent1].[Apellido] AS [Apellido], 
+    [Extent1].[ApellidoDeSoltera] AS [ApellidoDeSoltera], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Edad] AS [Edad], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[Test] AS [Test]
+    FROM [dbo].[Cliente] AS [Extent1]
+    WHERE [Extent1].[ClienteId] = @p__linq__0
+18/5/2017 16:18:32 - INFO: 
+
+18/5/2017 16:18:32 - INFO: -- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+18/5/2017 16:18:32 - INFO: -- Executing at 18/5/2017 16:18:32 -03:00
+
+18/5/2017 16:18:32 - INFO: -- Completed in 2 ms with result: SqlDataReader
+
+18/5/2017 16:18:32 - INFO: 
+
+18/5/2017 16:18:32 - INFO: Closed connection at 18/5/2017 16:18:32 -03:00
+
+18/5/2017 16:20:18 - INFO: Pasó por el action Busqueda
+18/5/2017 16:20:18 - INFO: Opened connection at 18/5/2017 16:20:18 -03:00
+
+18/5/2017 16:20:18 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE ([Extent1].[Nombre] LIKE @p__linq__0 ESCAPE N'~') OR ( CAST( [Extent1].[Precio] AS nvarchar(max)) LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:20:18 - INFO: 
+
+18/5/2017 16:20:18 - INFO: -- p__linq__0: '%40%' (Type = String, Size = 4000)
+
+18/5/2017 16:20:18 - INFO: -- p__linq__1: '%40%' (Type = String, Size = 4000)
+
+18/5/2017 16:20:18 - INFO: -- Executing at 18/5/2017 16:20:18 -03:00
+
+18/5/2017 16:20:18 - INFO: -- Completed in 9 ms with result: SqlDataReader
+
+18/5/2017 16:20:18 - INFO: 
+
+18/5/2017 16:20:18 - INFO: Closed connection at 18/5/2017 16:20:18 -03:00
+
+18/5/2017 16:22:20 - INFO: Pasó por el action Busqueda
+18/5/2017 16:22:20 - INFO: Opened connection at 18/5/2017 16:22:20 -03:00
+
+18/5/2017 16:22:21 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE ([Extent1].[Nombre] LIKE @p__linq__0 ESCAPE N'~') OR ( CAST( [Extent1].[Precio] AS nvarchar(max)) LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:22:21 - INFO: 
+
+18/5/2017 16:22:21 - INFO: -- p__linq__0: '%40%' (Type = String, Size = 4000)
+
+18/5/2017 16:22:21 - INFO: -- p__linq__1: '%40%' (Type = String, Size = 4000)
+
+18/5/2017 16:22:21 - INFO: -- Executing at 18/5/2017 16:22:21 -03:00
+
+18/5/2017 16:22:21 - INFO: -- Completed in 11 ms with result: SqlDataReader
+
+18/5/2017 16:22:21 - INFO: 
+
+18/5/2017 16:22:21 - INFO: Closed connection at 18/5/2017 16:22:21 -03:00
+
+18/5/2017 16:26:12 - INFO: Pasó por el action Busqueda
+18/5/2017 16:26:12 - INFO: Opened connection at 18/5/2017 16:26:12 -03:00
+
+18/5/2017 16:26:12 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE ([Extent1].[Nombre] LIKE @p__linq__0 ESCAPE N'~') OR ( CAST( [Extent1].[Precio] AS nvarchar(max)) LIKE @p__linq__1 ESCAPE N'~')
+18/5/2017 16:26:12 - INFO: 
+
+18/5/2017 16:26:12 - INFO: -- p__linq__0: '%40%' (Type = String, Size = 4000)
+
+18/5/2017 16:26:12 - INFO: -- p__linq__1: '%40%' (Type = String, Size = 4000)
+
+18/5/2017 16:26:12 - INFO: -- Executing at 18/5/2017 16:26:12 -03:00
+
+18/5/2017 16:26:12 - INFO: -- Completed in 10 ms with result: SqlDataReader
+
+18/5/2017 16:26:12 - INFO: 
+
+18/5/2017 16:26:12 - INFO: Closed connection at 18/5/2017 16:26:12 -03:00
+
+18/5/2017 16:26:41 - INFO: Opened connection at 18/5/2017 16:26:41 -03:00
+
+18/5/2017 16:26:41 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[ProductoId] = @p__linq__0
+18/5/2017 16:26:41 - INFO: 
+
+18/5/2017 16:26:41 - INFO: -- p__linq__0: '3' (Type = Int32, IsNullable = false)
+
+18/5/2017 16:26:41 - INFO: -- Executing at 18/5/2017 16:26:41 -03:00
+
+18/5/2017 16:26:41 - INFO: -- Completed in 5 ms with result: SqlDataReader
+
+18/5/2017 16:26:41 - INFO: 
+
+18/5/2017 16:26:41 - INFO: Closed connection at 18/5/2017 16:26:41 -03:00
+
+18/5/2017 16:31:28 - INFO: Opened connection at 18/5/2017 16:31:28 -03:00
+
+18/5/2017 16:31:28 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[ProductoId] = @p__linq__0
+18/5/2017 16:31:28 - INFO: 
+
+18/5/2017 16:31:28 - INFO: -- p__linq__0: '0' (Type = Int32, IsNullable = false)
+
+18/5/2017 16:31:28 - INFO: -- Executing at 18/5/2017 16:31:28 -03:00
+
+18/5/2017 16:31:28 - INFO: -- Completed in 2 ms with result: SqlDataReader
+
+18/5/2017 16:31:28 - INFO: 
+
+18/5/2017 16:31:28 - INFO: Closed connection at 18/5/2017 16:31:28 -03:00
+
+18/5/2017 16:37:36 - INFO: Opened connection at 18/5/2017 16:37:36 -03:00
+
+18/5/2017 16:37:36 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[ProductoId] = @p__linq__0
+18/5/2017 16:37:36 - INFO: 
+
+18/5/2017 16:37:36 - INFO: -- p__linq__0: '3' (Type = Int32, IsNullable = false)
+
+18/5/2017 16:37:36 - INFO: -- Executing at 18/5/2017 16:37:36 -03:00
+
+18/5/2017 16:37:36 - INFO: -- Completed in 11 ms with result: SqlDataReader
+
+18/5/2017 16:37:36 - INFO: 
+
+18/5/2017 16:37:36 - INFO: Closed connection at 18/5/2017 16:37:36 -03:00
+
+18/5/2017 16:40:13 - INFO: Opened connection at 18/5/2017 16:40:13 -03:00
+
+18/5/2017 16:40:13 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[ProductoId] = @p__linq__0
+18/5/2017 16:40:13 - INFO: 
+
+18/5/2017 16:40:13 - INFO: -- p__linq__0: '0' (Type = Int32, IsNullable = false)
+
+18/5/2017 16:40:13 - INFO: -- Executing at 18/5/2017 16:40:13 -03:00
+
+18/5/2017 16:40:20 - INFO: -- Completed in 6863 ms with result: SqlDataReader
+
+18/5/2017 16:40:20 - INFO: 
+
+18/5/2017 16:40:20 - INFO: Closed connection at 18/5/2017 16:40:20 -03:00
+
+18/5/2017 16:40:20 - INFO: Opened connection at 18/5/2017 16:40:20 -03:00
+
+18/5/2017 16:40:20 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[ProductoId] = @p__linq__0
+18/5/2017 16:40:20 - INFO: 
+
+18/5/2017 16:40:20 - INFO: -- p__linq__0: '0' (Type = Int32, IsNullable = false)
+
+18/5/2017 16:40:20 - INFO: -- Executing at 18/5/2017 16:40:20 -03:00
+
+18/5/2017 16:40:20 - INFO: -- Completed in 1 ms with result: SqlDataReader
+
+18/5/2017 16:40:20 - INFO: 
+
+18/5/2017 16:40:20 - INFO: Closed connection at 18/5/2017 16:40:20 -03:00
+
+18/5/2017 16:40:35 - INFO: Opened connection at 18/5/2017 16:40:35 -03:00
+
+18/5/2017 16:40:35 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[ProductoId] = @p__linq__0
+18/5/2017 16:40:35 - INFO: 
+
+18/5/2017 16:40:35 - INFO: -- p__linq__0: '3' (Type = Int32, IsNullable = false)
+
+18/5/2017 16:40:35 - INFO: -- Executing at 18/5/2017 16:40:35 -03:00
+
+18/5/2017 16:40:35 - INFO: -- Completed in 8 ms with result: SqlDataReader
+
+18/5/2017 16:40:35 - INFO: 
+
+18/5/2017 16:40:35 - INFO: Closed connection at 18/5/2017 16:40:35 -03:00
+
+18/5/2017 16:41:05 - INFO: Opened connection at 18/5/2017 16:41:05 -03:00
+
+18/5/2017 16:41:05 - INFO: SELECT TOP (1) 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+    WHERE [Extent1].[ProductoId] = @p__linq__0
+18/5/2017 16:41:05 - INFO: 
+
+18/5/2017 16:41:05 - INFO: -- p__linq__0: '3' (Type = Int32, IsNullable = false)
+
+18/5/2017 16:41:05 - INFO: -- Executing at 18/5/2017 16:41:05 -03:00
+
+18/5/2017 16:41:05 - INFO: -- Completed in 2 ms with result: SqlDataReader
+
+18/5/2017 16:41:05 - INFO: 
+
+18/5/2017 16:41:05 - INFO: Closed connection at 18/5/2017 16:41:05 -03:00
+
+18/5/2017 16:41:05 - INFO: Opened connection at 18/5/2017 16:41:05 -03:00
+
+18/5/2017 16:41:05 - INFO: SELECT 
+    [Extent1].[ProductoId] AS [ProductoId], 
+    [Extent1].[Nombre] AS [Nombre], 
+    [Extent1].[Precio] AS [Precio], 
+    [Extent1].[Codigo] AS [Codigo], 
+    [Extent1].[Stock] AS [Stock]
+    FROM [dbo].[Producto] AS [Extent1]
+18/5/2017 16:41:05 - INFO: 
+
+18/5/2017 16:41:05 - INFO: -- Executing at 18/5/2017 16:41:05 -03:00
+
+18/5/2017 16:41:05 - INFO: -- Completed in 1 ms with result: SqlDataReader
+
+18/5/2017 16:41:05 - INFO: 
+
+18/5/2017 16:41:05 - INFO: Closed connection at 18/5/2017 16:41:05 -03:00
+
